@@ -32,27 +32,20 @@ header h1 {
     font-family: 'Merriweather', serif;
 }
 
-/* Image Gallery - Responsive */
+/* Image Gallery - Collage style */
 .image-gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: grid; /* Use a grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically adjust columns based on screen size */
+    gap: 15px; /* Add space between the images */
+    justify-items: center; /* Center the images horizontally */
+    margin-bottom: 30px;
 }
 
 .gallery-image {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    object-fit: cover; /* Ensures images maintain aspect ratio */
-    width: 280px; /* Adds fixed size to limit width */
-}
-
-@media (max-width: 768px) {
-    .gallery-image {
-        width: 100%;
-        max-width: 300px; /* Adjust for mobile view */
-    }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
 /* Story & Donor Info */
@@ -150,6 +143,10 @@ header h1 {
         font-size: 1em;
     }
 
+    .gallery-image {
+        max-width: 80%;
+    }
+
     .link-button {
         width: 100%;
         text-align: center;
@@ -206,7 +203,7 @@ header h1 {
     padding: 20px;
     margin-top: 50px;
     font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Indie Flower", cursive; /* Applying handwritten font */
 }
 
 .footer p {
