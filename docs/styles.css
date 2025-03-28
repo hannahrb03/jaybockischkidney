@@ -1,5 +1,4 @@
-/* css/styles.css */
-
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.7;
@@ -9,8 +8,10 @@ body {
     color: #333;
 }
 
+/* Responsive Container */
 .container {
-    max-width: 800px;
+    max-width: 90%;
+    width: 800px;
     margin: 20px auto;
     background-color: white;
     padding: 30px;
@@ -18,6 +19,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Header */
 header {
     text-align: center;
     margin-bottom: 30px;
@@ -26,23 +28,25 @@ header {
 header h1 {
     color: #2c3e50;
     margin-bottom: 15px;
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-family: 'Merriweather', serif;
 }
 
+/* Image Gallery - Responsive */
 .image-gallery {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    gap: 10px;
 }
 
 .gallery-image {
-    max-height: 120px;
-    margin: 5px;
+    max-width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
+/* Story & Donor Info */
 .story, .donor-info {
     margin-bottom: 30px;
 }
@@ -53,6 +57,7 @@ header h1 {
     text-align: justify;
 }
 
+/* Donor Info */
 .donor-info {
     text-align: center;
 }
@@ -62,15 +67,16 @@ header h1 {
     margin-bottom: 20px;
     border-bottom: 2px solid #ecf0f1;
     padding-bottom: 10px;
-    display: inline-block; /* Add this */
-    width: 100%; /* Add this */
+    display: inline-block;
+    width: 100%;
 }
 
 .donor-info p {
-    display: inline-block; /* Add this */
-    width: 100%; /* Add this */
+    display: inline-block;
+    width: 100%;
 }
 
+/* Button Styles */
 .link-button {
     display: inline-block;
     padding: 12px 25px;
@@ -87,6 +93,7 @@ header h1 {
     background-color: #219653;
 }
 
+/* Links */
 .info-link {
     display: block;
     margin-top: 15px;
@@ -99,6 +106,7 @@ header h1 {
     color: #2980b9;
 }
 
+/* Bible Verse Section */
 .bible-verse {
     background-color: #f0f8ff;
     border-radius: 10px;
@@ -113,6 +121,33 @@ header h1 {
     font-size: 1.05em;
 }
 
-.button-container{
+/* Button Container */
+.button-container {
     text-align: center;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .story p {
+        font-size: 1em;
+    }
+
+    .gallery-image {
+        max-width: 80%;
+    }
+
+    .link-button {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
 }
