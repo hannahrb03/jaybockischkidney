@@ -153,6 +153,7 @@ header h1 {
 }
 
 /* CaringBridge Link Section */
+/* CaringBridge Link Section */
 .caring-bridge-link {
     margin-bottom: 30px;
     background-color: #ecf0f1;
@@ -177,16 +178,18 @@ header h1 {
 
 .caring-bridge-link .link-button {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 8px 20px; /* Adjusted padding to make button shorter */
     background-color: #3498db;
     color: white;
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    max-width: 300px; /* Limit the maximum width of the button */
+    width: auto; /* Make the width auto to adjust to the content */
+    white-space: nowrap; /* Prevents the text from wrapping */
 }
 
 .caring-bridge-link .link-button:hover {
     background-color: #2980b9;
 }
-
