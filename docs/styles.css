@@ -44,6 +44,15 @@ header h1 {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    width: 280px; /* Adds fixed size to limit width */
+}
+
+@media (max-width: 768px) {
+    .gallery-image {
+        width: 100%;
+        max-width: 300px; /* Adjust for mobile view */
+    }
 }
 
 /* Story & Donor Info */
@@ -141,10 +150,6 @@ header h1 {
         font-size: 1em;
     }
 
-    .gallery-image {
-        max-width: 80%;
-    }
-
     .link-button {
         width: 100%;
         text-align: center;
@@ -152,7 +157,6 @@ header h1 {
     }
 }
 
-/* CaringBridge Link Section */
 /* CaringBridge Link Section */
 .caring-bridge-link {
     margin-bottom: 30px;
