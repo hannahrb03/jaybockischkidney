@@ -9,21 +9,40 @@ body {
 }
 
 /* Navigation Bar Styles */
+/* Navigation Bar Styles */
 nav {
-    background-color: #cbebf1; /* Updated Nav Bar Color */
+    background-color: #cbebf1; /* Nav Bar Color */
     padding: 10px 20px;
+    text-align: center;
 }
 
 nav a {
-    color: #2c3e50; /* Darker text color for nav links */
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #3498db; /* Button Background Color */
+    color: white; /* Text Color */
     text-decoration: none;
-    margin: 0 15px;
     font-size: 1.1em;
     font-weight: bold;
+    border-radius: 6px;
+    margin: 0 10px; /* Space between buttons */
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    color: #2980b9; /* Change to a darker color on hover */
+    background-color: #2980b9; /* Darker button color on hover */
+}
+
+/* Remove default list styles for nav items */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px; /* Space between items */
 }
 
 /* Container Styles */
