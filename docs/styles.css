@@ -34,6 +34,36 @@ header {
     font-family: 'Indie Flower', cursive;
 }
 
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery-image {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+/* Specific Styling for Beach Family Image */
+.beach_family {
+    width: 100%; /* Ensures it fills the container width */
+    max-width: 500px; /* Limits the width of the image */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Navigation - Full Width on Top */
 nav {
     display: flex;
@@ -78,27 +108,6 @@ nav ul li a:hover {
 nav ul li a:visited {
     color: white;
     text-decoration: none;
-}
-
-/* Image Gallery */
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
-}
-
-.gallery-image {
-    width: 250px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-.gallery-image:hover {
-    transform: scale(1.05);
 }
 
 /* Story Section */
@@ -186,5 +195,9 @@ footer {
     .container, .story, .donate-section, .about-section {
         width: 90%;
         padding: 15px;
+    }
+
+    .beach_family {
+        max-width: 100%;
     }
 }
