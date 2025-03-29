@@ -10,34 +10,59 @@ body {
 
 /* Navigation Bar Styles */
 nav {
-    background-color: #cbebf1;
-    display: flex;
-    justify-content: space-between;
+    background-color: #cbebf1; /* Nav Bar Color */
     padding: 0;
-    border-bottom: 2px solid black;
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Distribute the buttons evenly */
+    border-bottom: 2px solid black; /* Black line at the bottom */
+    width: 100%; /* Full screen width */
 }
 
 nav a {
     display: block;
     padding: 15px 20px;
-    background-color: #3498db;
-    color: white;
+    background-color: #3498db; /* Button Background Color */
+    color: white; /* Text Color */
     text-decoration: none;
     font-size: 1.1em;
     font-weight: bold;
     text-align: center;
-    border-right: 2px solid black;
+    border-right: 2px solid black; /* Black line between buttons */
     transition: background-color 0.3s ease;
-    flex: 1; /* To make the links take up equal space */
+    width: 100%; /* Make each link take up full width */
 }
 
+/* Remove the border from the last button */
 nav a:last-child {
     border-right: none;
 }
 
 nav a:hover {
-    background-color: #2980b9;
+    background-color: #2980b9; /* Darker button color on hover */
 }
+
+/* Remove default list styles for nav items */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Make nav links take up the full width */
+nav a {
+    width: 100%;
+    display: block;
+}
+
+/* Flex properties to make each button take equal space */
+nav {
+    display: flex;
+}
+
+nav a {
+    flex: 1; /* Make each button take up equal space */
+}
+
 
 /* Add a White Box with Padding and Shadow for All Paragraphs in Main Text Sections, Except Bible Verse */
 .story p, .donor-info p {
