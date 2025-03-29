@@ -9,7 +9,6 @@ body {
 }
 
 /* Navigation Bar Styles */
-/* Navigation Bar Styles */
 nav {
     background-color: #cbebf1; /* Nav Bar Color */
     padding: 10px 20px;
@@ -152,5 +151,36 @@ h2 {
         width: 100%;
         text-align: center;
         padding: 10px 0;
+    }
+}
+
+/* Image Styles */
+.gallery-image {
+    max-width: 100%;  /* Ensures images scale based on the container's width */
+    height: auto;  /* Keeps the aspect ratio intact */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Adds shadow for depth */
+    margin-bottom: 15px;  /* Adds some space below the images */
+}
+
+/* Make images responsive inside the container */
+.container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;  /* Center images within the container */
+}
+
+/* Mobile Responsiveness for Images */
+@media (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller grid items for mobile */
+        gap: 10px; /* Reduce gap between images */
+    }
+
+    .gallery-image {
+        max-width: 100%;
+        height: auto;
+        box-shadow: none;  /* Optional: Remove box shadow on small screens for simplicity */
     }
 }
