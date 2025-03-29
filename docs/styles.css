@@ -20,30 +20,37 @@ header {
 }
 
 /* Navigation Bar Styles */
+/* Navigation Bar Styles */
 nav {
-    display: flex;  /* Horizontal layout */
-    justify-content: center;  /* Center the navigation links */
-    gap: 20px;  /* Space between the buttons */
-    background-color: #cbebf1; /* Background color */
-    padding: 10px 0;  /* Vertical padding for the nav */
+    display: flex;  /* Makes items go in a row */
+    justify-content: space-evenly;  /* Distributes them evenly */
+    background-color: #cbebf1;  /* Light blue background */
+    width: 100%;  /* Full width */
+    border-bottom: 2px solid black;  /* Black bar below navbar */
 }
 
 nav a {
-    text-align: center;  /* Center text in each link */
-    padding: 15px 30px;  /* Add space inside the buttons */
-    color: black;  /* Text color */
-    text-decoration: none;  /* Remove underline */
-    font-size: 1.2em;  /* Larger text */
-    font-weight: bold;  /* Bold text */
-    border: 2px solid black;  /* Border around each link */
-    border-radius: 5px;  /* Rounded corners for the buttons */
-    transition: all 0.3s ease;  /* Smooth hover transition */
+    flex: 1;  /* Makes each link take equal space */
+    text-align: center;  
+    padding: 15px 0;  /* Padding for spacing */
+    color: black;  
+    text-decoration: none;  
+    font-size: 1.2em;  
+    font-weight: bold;  
+    display: block;  /* Makes sure each link takes full space */
+    border-right: 2px solid black;  /* Black separator */
+    background-color: #cbebf1;  /* Light blue background */
 }
 
+/* Remove border from last item to avoid double border */
+nav a:last-child {
+    border-right: none;
+}
+
+/* Hover effect */
 nav a:hover {
-    background-color: #2980b9;  /* Hover effect for background */
-    color: white;  /* Change text color on hover */
-    border-color: #2980b9;  /* Change border color on hover */
+    background-color: #2980b9;  /* Blue hover */
+    color: white;  
 }
 
 /* Main content styles */
