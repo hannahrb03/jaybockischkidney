@@ -12,6 +12,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header Styles */
 header {
     background-color: #cbebf1; /* Light blue background */
     padding: 20px;
@@ -21,29 +22,28 @@ header {
 /* Navigation Bar Styles */
 nav {
     display: flex;  /* Horizontal layout */
-    justify-content: space-around;  /* Evenly distribute links */
+    justify-content: center;  /* Center the navigation links */
+    gap: 20px;  /* Space between the buttons */
     background-color: #cbebf1; /* Background color */
-    width: 100%;  /* Take full width */
+    padding: 10px 0;  /* Vertical padding for the nav */
 }
 
 nav a {
     text-align: center;  /* Center text in each link */
-    padding: 15px 30px;  /* Increased horizontal padding for more space */
+    padding: 15px 30px;  /* Add space inside the buttons */
     color: black;  /* Text color */
     text-decoration: none;  /* Remove underline */
     font-size: 1.2em;  /* Larger text */
     font-weight: bold;  /* Bold text */
-    border-right: 2px solid black;  /* Black line separating links */
-    display: block;  /* Make each link block-level */
-}
-
-nav a:last-child {
-    border-right: none;  /* Remove border for the last link */
+    border: 2px solid black;  /* Border around each link */
+    border-radius: 5px;  /* Rounded corners for the buttons */
+    transition: all 0.3s ease;  /* Smooth hover transition */
 }
 
 nav a:hover {
     background-color: #2980b9;  /* Hover effect for background */
     color: white;  /* Change text color on hover */
+    border-color: #2980b9;  /* Change border color on hover */
 }
 
 /* Main content styles */
