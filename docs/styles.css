@@ -8,6 +8,24 @@ body {
     color: #333;
 }
 
+/* Navigation Bar Styles */
+nav {
+    background-color: #cbebf1; /* Updated Nav Bar Color */
+    padding: 10px 20px;
+}
+
+nav a {
+    color: #2c3e50; /* Darker text color for nav links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2980b9; /* Change to a darker color on hover */
+}
+
 /* Container Styles */
 .container {
     max-width: 90%;
@@ -82,7 +100,7 @@ h2 {
 /* Footer */
 .footer {
     text-align: center;
-    background-color: #3498db;
+    background-color: #3498db; /* Updated Footer Color */
     color: white;
     padding: 20px;
     margin-top: 50px;
