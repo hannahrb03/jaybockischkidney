@@ -8,85 +8,64 @@ body {
     color: #333;
 }
 
-/* Responsive Container */
+/* Container Styles */
 .container {
     max-width: 90%;
     width: 800px;
     margin: 20px auto;
-    background-color: white;
     padding: 30px;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Header */
-header {
-    text-align: center;
-    margin-bottom: 30px;
+/* Text Content Box - Separate box for each section with padding */
+h1, h2, p {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-header h1 {
+h1 {
     color: #2c3e50;
-    margin-bottom: 15px;
-    font-size: 2.2em;
     font-family: 'Merriweather', serif;
+    font-size: 2.2em;
+    margin-bottom: 15px;
 }
 
-/* Image Gallery - Collage style */
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-    justify-items: center;
-    margin-bottom: 30px;
+h2 {
+    color: #3498db;
+    font-size: 1.8em;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
 }
 
-.gallery-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Story & Donor Info */
-.story, .donor-info {
-    margin-bottom: 30px;
-    background-color: white; /* Add white background */
-    padding: 20px; /* Padding around content */
-    border-radius: 10px; /* Rounded corners for the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-}
-
-.story p, .donor-info p {
+p {
     font-size: 1.1em;
     color: #555;
     text-align: justify;
 }
 
-/* Donor Info */
+/* Story & Donor Info */
+.story, .donor-info {
+    margin-bottom: 30px;
+}
+
 .donor-info {
     text-align: center;
 }
 
-.donor-info h2 {
-    color: #3498db;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ecf0f1;
-    padding-bottom: 10px;
-    display: inline-block;
-    width: 100%;
-}
-
 .donor-info p {
-    display: inline-block;
-    width: 100%;
+    font-size: 1em;
 }
 
 /* Button Styles */
 .link-button {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #27ae60; /* Green button */
+    background-color: #27ae60;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -132,32 +111,6 @@ header h1 {
     text-align: center;
 }
 
-/* Media Queries for Mobile Responsiveness */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 1.8em;
-    }
-
-    .story p {
-        font-size: 1em;
-    }
-
-    .gallery-image {
-        max-width: 80%;
-    }
-
-    .link-button {
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-}
-
 /* Footer */
 .footer {
     text-align: center;
@@ -173,4 +126,30 @@ header h1 {
 .footer p {
     margin: 0;
     font-style: italic;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .gallery-image {
+        max-width: 80%;
+    }
+
+    .link-button {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
 }
