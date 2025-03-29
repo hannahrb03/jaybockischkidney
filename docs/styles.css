@@ -1,40 +1,81 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.7;
+/* Reset some default browser styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+    box-sizing: border-box;
+}
+
+/* Apply general styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #cbebf1; /* Light blue background */
+    padding: 20px;
+    text-align: center;
 }
 
 /* Navigation Bar Styles */
 nav {
-    display: flex;  /* Use flexbox to make items horizontal */
-    justify-content: space-evenly;  /* Distribute items evenly */
+    display: flex;  /* Horizontal layout */
+    justify-content: space-evenly;  /* Evenly distribute links */
     background-color: #cbebf1; /* Background color */
-    width: 100%;  /* Full width */
-    padding: 0;  /* Remove padding */
+    width: 100%;  /* Take full width */
 }
 
 nav a {
-    text-align: center;  /* Center the text */
-    padding: 20px;  /* Add some padding to the links */
+    text-align: center;  /* Center text in each link */
+    padding: 15px 0;  /* Vertical padding for the links */
     color: black;  /* Text color */
     text-decoration: none;  /* Remove underline */
-    font-size: 1.1em;  /* Font size */
+    font-size: 1.2em;  /* Larger text */
     font-weight: bold;  /* Bold text */
-    border-right: 2px solid black;  /* Black line between links */
-    flex: 1;  /* Make each link take up equal width */
+    border-right: 2px solid black;  /* Black line separating links */
+    display: block;  /* Make each link block-level */
 }
 
 nav a:last-child {
-    border-right: none;  /* Remove the right border from the last link */
+    border-right: none;  /* Remove border for the last link */
 }
 
 nav a:hover {
-    background-color: #2980b9;  /* Background color change on hover */
-    color: white;  /* Text color change on hover */
+    background-color: #2980b9;  /* Hover effect for background */
+    color: white;  /* Change text color on hover */
+}
+
+/* Main content styles */
+.main-image {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Consolidate Footer Styling */
+footer.footer {
+    text-align: center;
+    background-color: #3498db; /* Updated Footer Color */
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 1.2em;
+    font-family: "Indie Flower", cursive;
+    font-weight: bold;
+}
+
+footer .fas {
+    color: red;
+}
+
+footer p {
+    margin: 0;
+    font-style: italic;
 }
 
 /* Add a White Box with Padding and Shadow for All Paragraphs in Main Text Sections, Except Bible Verse */
@@ -97,23 +138,6 @@ h2 {
     background-color: #219653;
 }
 
-/* Footer */
-.footer {
-    text-align: center;
-    background-color: #3498db; /* Updated Footer Color */
-    color: white;
-    padding: 20px;
-    margin-top: 50px;
-    font-size: 1.2em;
-    font-family: "Indie Flower", cursive;
-    font-weight: bold;
-}
-
-.footer p {
-    margin: 0;
-    font-style: italic;
-}
-
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     .container {
@@ -134,6 +158,12 @@ h2 {
         text-align: center;
         padding: 10px 0;
     }
+
+    /* Adjust the image gallery on small screens */
+    .image-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller grid items for mobile */
+        gap: 10px; /* Reduce gap between images */
+    }
 }
 
 /* Image Styles */
@@ -151,18 +181,4 @@ h2 {
     height: auto;
     display: block;
     margin: 0 auto;  /* Center images within the container */
-}
-
-/* Mobile Responsiveness for Images */
-@media (max-width: 768px) {
-    .image-gallery {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller grid items for mobile */
-        gap: 10px; /* Reduce gap between images */
-    }
-
-    .gallery-image {
-        max-width: 100%;
-        height: auto;
-        box-shadow: none;  /* Optional: Remove box shadow on small screens for simplicity */
-    }
 }
