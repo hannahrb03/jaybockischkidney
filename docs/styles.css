@@ -21,14 +21,14 @@ header {
 /* Navigation Bar Styles */
 nav {
     display: flex;  /* Horizontal layout */
-    justify-content: space-evenly;  /* Evenly distribute links */
+    justify-content: space-around;  /* Evenly distribute links */
     background-color: #cbebf1; /* Background color */
     width: 100%;  /* Take full width */
 }
 
 nav a {
     text-align: center;  /* Center text in each link */
-    padding: 15px 0;  /* Vertical padding for the links */
+    padding: 15px 30px;  /* Increased horizontal padding for more space */
     color: black;  /* Text color */
     text-decoration: none;  /* Remove underline */
     font-size: 1.2em;  /* Larger text */
