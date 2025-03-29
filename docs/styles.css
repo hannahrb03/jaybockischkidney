@@ -1,213 +1,155 @@
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.7;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #f8f9fa;
     color: #333;
 }
 
-/* Responsive Container */
-.container {
-    max-width: 90%;
-    width: 800px;
-    margin: 20px auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Header */
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-header h1 {
-    color: #2c3e50;
-    margin-bottom: 15px;
-    font-size: 2.2em;
+h1, h2 {
     font-family: 'Merriweather', serif;
+    color: #2c3e50;
 }
 
-/* Image Gallery - Collage style */
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Image Gallery */
 .image-gallery {
-    display: grid; /* Use a grid layout */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically adjust columns based on screen size */
-    gap: 15px; /* Add space between the images */
-    justify-items: center; /* Center the images horizontally */
-    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
 }
 
 .gallery-image {
-    max-width: 100%;
+    width: 250px;
     height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Story & Donor Info */
-.story, .donor-info {
-    margin-bottom: 30px;
+.gallery-image:hover {
+    transform: scale(1.05);
 }
 
-.story p {
-    font-size: 1.1em;
-    color: #555;
-    text-align: justify;
+/* Story Section */
+.story {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Donor Info */
-.donor-info {
+.bible-verse {
+    font-style: italic;
+    font-weight: bold;
     text-align: center;
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
 }
 
-.donor-info h2 {
-    color: #3498db;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ecf0f1;
-    padding-bottom: 10px;
-    display: inline-block;
-    width: 100%;
+/* Donate Kidney Section */
+.button-container {
+    text-align: center;
+    margin: 20px 0;
 }
 
-.donor-info p {
-    display: inline-block;
-    width: 100%;
-}
-
-/* Button Styles */
 .link-button {
     display: inline-block;
-    padding: 12px 25px;
-    background-color: #27ae60;
+    background-color: #3498db;
     color: white;
+    padding: 12px 20px;
     text-decoration: none;
-    border-radius: 6px;
-    margin-top: 20px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .link-button:hover {
-    background-color: #219653;
+    background-color: #217dbb;
 }
 
-/* Links */
 .info-link {
     display: block;
-    margin-top: 15px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
     color: #3498db;
-    text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 .info-link:hover {
-    color: #2980b9;
-}
-
-/* Bible Verse Section */
-.bible-verse {
-    background-color: #f0f8ff;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 20px 0;
-    text-align: center;
-    font-style: italic;
-}
-
-.bible-verse p {
-    color: #4a5568;
-    font-size: 1.05em;
-}
-
-/* Button Container */
-.button-container {
-    text-align: center;
-}
-
-/* Media Queries for Mobile Responsiveness */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 1.8em;
-    }
-
-    .story p {
-        font-size: 1em;
-    }
-
-    .gallery-image {
-        max-width: 80%;
-    }
-
-    .link-button {
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-}
-
-/* CaringBridge Link Section */
-.caring-bridge-link {
-    margin-bottom: 30px;
-    background-color: #ecf0f1;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.caring-bridge-link h2 {
-    color: #2c3e50;
-    margin-bottom: 15px;
-    font-size: 2em;
-    font-family: 'Merriweather', serif;
-}
-
-.caring-bridge-link p {
-    color: #555;
-    font-size: 1.1em;
-    margin-bottom: 20px;
-}
-
-.caring-bridge-link .link-button {
-    display: inline-block;
-    padding: 8px 20px; /* Adjusted padding to make button shorter */
-    background-color: #3498db;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    max-width: 300px; /* Limit the maximum width of the button */
-    width: auto; /* Make the width auto to adjust to the content */
-    white-space: nowrap; /* Prevents the text from wrapping */
-}
-
-.caring-bridge-link .link-button:hover {
-    background-color: #2980b9;
+    text-decoration: underline;
 }
 
 /* Footer */
-.footer {
+footer {
+    font-family: 'Indie Flower', cursive;
     text-align: center;
-    background-color: #3498db;
+    background-color: #2c3e50;
     color: white;
-    padding: 20px;
-    margin-top: 50px;
-    font-size: 1.2em;
-    font-family: "Indie Flower", cursive; /* Applying handwritten font */
-    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
 }
 
-.footer p {
-    margin: 0;
-    font-style: italic;
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-image {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .story {
+        width: 90%;
+        padding: 15px;
+    }
 }
