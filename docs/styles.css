@@ -10,59 +10,32 @@ body {
 
 /* Navigation Bar Styles */
 nav {
-    background-color: #cbebf1; /* Nav Bar Color */
-    padding: 0;
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content: space-between; /* Distribute the buttons evenly */
-    border-bottom: 2px solid black; /* Black line at the bottom */
-    width: 100%; /* Full screen width */
+    display: flex;  /* Use flexbox to make items horizontal */
+    justify-content: space-evenly;  /* Distribute items evenly */
+    background-color: #cbebf1; /* Background color */
+    width: 100%;  /* Full width */
+    padding: 0;  /* Remove padding */
 }
 
 nav a {
-    display: block;
-    padding: 15px 20px;
-    background-color: #3498db; /* Button Background Color */
-    color: white; /* Text Color */
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: bold;
-    text-align: center;
-    border-right: 2px solid black; /* Black line between buttons */
-    transition: background-color 0.3s ease;
-    width: 100%; /* Make each link take up full width */
+    text-align: center;  /* Center the text */
+    padding: 20px;  /* Add some padding to the links */
+    color: black;  /* Text color */
+    text-decoration: none;  /* Remove underline */
+    font-size: 1.1em;  /* Font size */
+    font-weight: bold;  /* Bold text */
+    border-right: 2px solid black;  /* Black line between links */
+    flex: 1;  /* Make each link take up equal width */
 }
 
-/* Remove the border from the last button */
 nav a:last-child {
-    border-right: none;
+    border-right: none;  /* Remove the right border from the last link */
 }
 
 nav a:hover {
-    background-color: #2980b9; /* Darker button color on hover */
+    background-color: #2980b9;  /* Background color change on hover */
+    color: white;  /* Text color change on hover */
 }
-
-/* Remove default list styles for nav items */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Make nav links take up the full width */
-nav a {
-    width: 100%;
-    display: block;
-}
-
-/* Flex properties to make each button take equal space */
-nav {
-    display: flex;
-}
-
-nav a {
-    flex: 1; /* Make each button take up equal space */
-}
-
 
 /* Add a White Box with Padding and Shadow for All Paragraphs in Main Text Sections, Except Bible Verse */
 .story p, .donor-info p {
