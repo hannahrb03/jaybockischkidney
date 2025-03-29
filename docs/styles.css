@@ -11,21 +11,28 @@ body {
 /* Navigation Bar Styles */
 nav {
     background-color: #cbebf1; /* Nav Bar Color */
-    padding: 10px 20px;
-    text-align: center;
+    padding: 0; /* Remove padding */
+    display: flex; /* Make nav items stack horizontally */
+    justify-content: space-between; /* Distribute the buttons evenly */
+    border-bottom: 2px solid black; /* Black line at the bottom */
 }
 
 nav a {
-    display: inline-block;
-    padding: 12px 20px;
+    display: block; /* Make the links block elements so they fill the nav bar */
+    padding: 15px 20px;
     background-color: #3498db; /* Button Background Color */
     color: white; /* Text Color */
     text-decoration: none;
     font-size: 1.1em;
     font-weight: bold;
-    border-radius: 6px;
-    margin: 0 10px; /* Space between buttons */
+    text-align: center; /* Center the text */
+    border-right: 2px solid black; /* Black lines between buttons */
     transition: background-color 0.3s ease;
+    width: 100%; /* Make each link take up full width */
+}
+
+nav a:last-child {
+    border-right: none; /* Remove border for the last item */
 }
 
 nav a:hover {
@@ -42,6 +49,21 @@ nav ul {
 nav li {
     display: inline-block;
     margin-right: 10px; /* Space between items */
+}
+
+/* Make nav links take up the full width */
+nav a {
+    width: 100%;
+    display: block;
+}
+
+/* Make each item in the nav take equal space */
+nav {
+    display: flex;
+}
+
+nav a {
+    flex: 1; /* Make each button take up equal space */
 }
 
 /* Container Styles */
