@@ -42,8 +42,8 @@ nav a:hover {
     color: black;
 }
 
-/* Main Content Styling (Adjusted for "About Jay") */
-.container { /* Apply to the container div */
+/* Main Content Styling (General) */
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,8 +53,8 @@ nav a:hover {
     margin: auto;
 }
 
-/* Paragraphs in White Boxes */
-.story p { /* Apply to paragraphs in the story section */
+/* Paragraphs and List Items in White Boxes (General) */
+main p, main li {
     background-color: white;
     border: 1px solid #6cdbf0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -87,7 +87,7 @@ footer.footer {
     text-align: center;
     background-color: #cbebf1;
     color: #020f12;
-    padding: 20px;
+    padding: 10px;
     margin-top: 50px;
     font-size: 1 em;
     font-family: "Indie Flower";
@@ -105,18 +105,66 @@ footer p {
     font-style: italic;
 }
 
-/* Image Styling */
-.image-gallery img { /* Apply directly to images in the gallery */
-    max-width: 70%; /* Further reduce size */
+/* Button Styles */
+.donate-btn, .learn-btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #34c4ff;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.donate-btn:hover, .learn-btn:hover {
+    background-color: #6cdbf0;
+}
+
+.donate-btn {
+    background-color: #34c4ff;
+    border: 2px solid #3498db;
+}
+
+.learn-btn {
+    background-color: #5bbd5b;
+    border: 2px solid #4ca64c;
+}
+
+/* Image Styling (General) */
+.image-gallery img, main img {
+    max-width: 90%;
     height: auto;
     display: block;
     margin: 10px auto;
-    border-radius: 10px; /* Rounded edges */
-    padding: 10px;
+    border-radius: 8px;
+    padding: 12px;
     box-sizing: border-box;
 }
 
-.image-gallery { /* Style the gallery container */
+/* About Jay Page Specific Styling */
+.about-jay .image-gallery img {
+    max-width: 70%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.about-jay .story p {
+    background-color: white;
+    border: 1px solid #6cdbf0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 8px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.about-jay .image-gallery {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +187,7 @@ footer p {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .story p { /* Apply to story paragraphs on small screens */
+    main p, main li, .about-jay .story p {
         max-width: 95%;
     }
 
@@ -152,7 +200,7 @@ footer p {
         padding: 15px;
     }
 
-    .image-gallery img { /* Apply to gallery images on small screens */
+    .image-gallery img, main img, .about-jay .image-gallery img {
         max-width: 100%;
         padding: 5px;
         margin: 5px;
