@@ -42,8 +42,8 @@ nav a:hover {
     color: black;
 }
 
-/* Main Content Styling */
-main {
+/* Main Content Styling (Adjusted for "About Jay") */
+.container { /* Apply to the container div */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,13 +53,13 @@ main {
     margin: auto;
 }
 
-/* Paragraphs and List Items in White Boxes */
-main p, main li, .story p { /* Apply to story paragraphs too */
+/* Paragraphs in White Boxes */
+.story p { /* Apply to paragraphs in the story section */
     background-color: white;
     border: 1px solid #6cdbf0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    margin: 15px auto; /* Centers the boxes */
+    margin: 15px auto;
     border-radius: 8px;
     max-width: 80%;
     text-align: center;
@@ -105,39 +105,9 @@ footer p {
     font-style: italic;
 }
 
-/* Button Styles */
-.donate-btn, .learn-btn {
-    display: inline-block;
-    text-align: center;
-    background-color: #34c4ff;
-    color: #ffffff;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
-    transition: background-color 0.3s ease;
-}
-
-.donate-btn:hover, .learn-btn:hover {
-    background-color: #6cdbf0;
-}
-
-.donate-btn {
-    background-color: #34c4ff;
-    border: 2px solid #3498db;
-}
-
-.learn-btn {
-    background-color: #5bbd5b;
-    border: 2px solid #4ca64c;
-}
-
 /* Image Styling */
-.image-gallery img, main img {
-    max-width: 80%; /* Reduced size */
+.image-gallery img { /* Apply directly to images in the gallery */
+    max-width: 70%; /* Further reduce size */
     height: auto;
     display: block;
     margin: 10px auto;
@@ -146,15 +116,11 @@ footer p {
     box-sizing: border-box;
 }
 
-.about-jay .image-gallery {
+.image-gallery { /* Style the gallery container */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.about-jay .image-gallery img {
-    max-width: 70%; /* Further reduce for consistency */
 }
 
 /* Bible Verse Styling */
@@ -173,7 +139,7 @@ footer p {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    main p, main li, .story p {
+    .story p { /* Apply to story paragraphs on small screens */
         max-width: 95%;
     }
 
@@ -186,11 +152,7 @@ footer p {
         padding: 15px;
     }
 
-    .about-jay .image-gallery img {
-        max-width: 100%;
-    }
-
-    .image-gallery img, main img {
+    .image-gallery img { /* Apply to gallery images on small screens */
         max-width: 100%;
         padding: 5px;
         margin: 5px;
