@@ -206,11 +206,11 @@ footer p {
 
 /* About Jay Page Specific Styling */
 .about-jay .image-gallery img {
-    max-width: 70%; /* Further reduce size for About Jay images */
-    border-radius: 10px; /* Add rounded edges */
+    max-width: 70%;
+    border-radius: 10px;
 }
 
-.about-jay .story p { /* Style paragraphs in About Jay's story */
+.about-jay .story p {
     background-color: white;
     border: 1px solid #6cdbf0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -223,6 +223,6 @@ footer p {
 
 @media (max-width: 600px) {
     .about-jay .image-gallery img {
-        max-width: 100%; /* About Jay images full width on small screens */
+        max-width: 100%;
     }
 }
