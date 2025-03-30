@@ -8,8 +8,8 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Important for full width footer */
+    padding: 0; /* Important for full width footer */
 }
 
 /* Header Styling */
@@ -53,10 +53,10 @@ main {
     margin: auto;
 }
 
-/* Styling for paragraphs and list items */
+/* Styling for paragraphs and list items in white box */
 main p, main li {
     background-color: white;
-    border: 1px solid #6cdbf0;
+    border: 1px solid #6cdbf0; /* Light blue border */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     margin: 15px 0;
@@ -83,36 +83,35 @@ h2 {
     padding-bottom: 10px;
 }
 
-/* Footer Styling */
+/* Footer Styling with Indie Flower Font */
 footer.footer {
     text-align: center;
     background-color: #cbebf1;
     color: #020f12;
     padding: 20px;
+    margin-top: 50px;
     font-size: 1.2em;
-    font-family: "Indie Flower";
+    font-family: "Indie Flower"; /* Apply Indie Flower font */
     font-weight: bold;
-    border-top: none;
-    box-shadow: none;
-    position: relative;
-    width: 100%;
+    border-top: none; /* Ensure consistency across all pages */
+    box-shadow: none; /* Remove box around footer */
+    width: 100%; /* Ensure full width */
 }
 
 footer p {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
+    background-color: transparent !important; /* Ensure no background */
+    border: none !important; /* Remove any accidental border */
+    box-shadow: none !important; /* Prevent shadow effects */
     margin: 0;
     font-style: italic;
-    padding: 0;
 }
 
 /* Button Styles */
 .donate-btn, .learn-btn {
     display: inline-block;
     text-align: center;
-    background-color: #34c4ff;
-    color: #ffffff;
+    background-color: #34c4ff; /* Blue for the donate button */
+    color: #ffffff; /* White text for contrast */
     padding: 15px 30px;
     font-size: 1.2em;
     font-weight: bold;
@@ -123,28 +122,51 @@ footer p {
     transition: background-color 0.3s ease;
 }
 
+/* Hover effect for buttons */
 .donate-btn:hover, .learn-btn:hover {
-    background-color: #6cdbf0;
+    background-color: #6cdbf0; /* Light blue for hover effect */
 }
 
-/* Image Styling for Responsiveness */
+/* Specific button styles */
+.donate-btn {
+    background-color: #34c4ff;
+    border: 2px solid #3498db;
+}
+
+.learn-btn {
+    background-color: #5bbd5b;
+    border: 2px solid #4ca64c;
+}
+
+/* Styling for images (Mobile responsive and padded) */
 .image-gallery img, main img {
-    max-width: 100%;
+    max-width: 90%; /* Adjusted image size for better fit */
     height: auto;
     display: block;
-    margin: 10px auto;
+    margin: 10px auto; /* Centers images */
     border-radius: 8px;
-    padding: 8px;
+    padding: 12px; /* Adds padding around the images */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
+/* Centering images specifically for About Jay page */
 .about-jay .image-gallery {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .about-jay .image-gallery img {
-    max-width: 90%;
+    max-width: 80%; /* Reduce image size further for About Jay page */
+}
+
+@media (max-width: 600px) {
+    .image-gallery img, main img {
+        max-width: 100%; /* Makes images responsive on small screens */
+        padding: 5px; /* Reduced padding for smaller devices */
+        margin: 5px; /* Reduced margin for smaller devices */
+    }
 }
 
 /* Bible Verse Styling */
@@ -169,13 +191,5 @@ footer p {
 
     nav a {
         font-size: 1.1em;
-    }
-}
-
-@media (max-width: 600px) {
-    .image-gallery img, main img {
-        max-width: 100%;
-        padding: 5px;
-        margin: 5px;
     }
 }
