@@ -141,12 +141,12 @@ footer p {
 
 /* Styling for images (Mobile responsive and padded) */
 .image-gallery img, main img {
-    max-width: 80%; /* Adjusted image size for better fit */
+    max-width: 70%; /* Adjusted image size for better fit */
     height: auto;
     display: block;
     margin: 10px auto; /* Centers images */
     border-radius: 8px;
-    padding: 10px; /* Adds padding around the images */
+    padding: 12px; /* Adds padding around the images */
 }
 
 /* Centering images specifically for About Jay page */
