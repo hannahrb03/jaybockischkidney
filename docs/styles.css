@@ -20,6 +20,7 @@ header {
 }
 
 /* Navigation Bar Styles */
+/* Navigation Bar Styles */
 nav {
     display: flex;
     flex-direction: column; /* Makes the links stack vertically */
@@ -51,6 +52,7 @@ nav a:hover {
     background-color: #cbebf1; /* Light blue hover effect */
     color: black;
 }
+
 
 /* Main content styles */
 .main-image {
