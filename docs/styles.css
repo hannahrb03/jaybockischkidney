@@ -17,6 +17,7 @@ header {
 
 header h1 {
     margin: 0;
+    font-family: 'Indie Flower', cursive;
 }
 
 nav {
@@ -28,24 +29,30 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
+/* Footer Styling */
+.footer {
+    background-color: #005f73;  /* Deep teal */
+    color: white;
+    padding: 10px 0;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;  /* Correct footer font */
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
 /* Main Content */
 main {
     padding: 20px;
-}
-
-/* Footer Styling */
-.footer {
-    background-color: white;
-    color: navy !important; /* Ensures navy footer text */
-    padding: 10px 0;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif; /* Corrected footer font */
 }
 
 /* Main Page Image */
