@@ -218,6 +218,6 @@ footer p {
 
 @media (max-width: 600px) {
     .about-jay .image-gallery img {
-        max-width: 100%;
+        max-width: 50%;
     }
 }
