@@ -99,6 +99,14 @@ footer.footer {
     width: 100%;
 }
 
+footer p {
+    background-color:none !important; /* Ensure no background */
+    border: none !important; /* Remove any accidental border */
+    box-shadow: none !important; /* Prevent shadow effects */
+    margin: 0;
+    font-style: italic;
+}
+
 /* Button Styles */
 .donate-btn, .learn-btn {
     display: inline-block;
