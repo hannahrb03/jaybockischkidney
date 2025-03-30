@@ -163,7 +163,7 @@ footer p {
 
 /* Footer Styling with Indie Flower Font */
 footer.footer {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower';
     background-color: #cbebf1;
     color: #020f12;
     padding: 20px;
