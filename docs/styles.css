@@ -22,35 +22,35 @@ header {
 /* Navigation Bar Styles */
 /* Navigation Bar Styles */
 nav {
-    display: flex;  /* Makes items go in a row */
-    justify-content: space-evenly;  /* Distributes them evenly */
-    background-color: #cbebf1;  /* Light blue background */
-    width: 100%;  /* Full width */
-    border-bottom: 2px solid black;  /* Black bar below navbar */
+    display: flex;
+    flex-direction: column; /* Makes the links stack vertically */
+    align-items: center; /* Centers the links */
+    background-color: white; /* White background */
+    width: 100%; /* Full width */
+    padding: 10px 0;
 }
 
 nav a {
-    flex: 1;  /* Makes each link take equal space */
-    text-align: center;  
-    padding: 15px 0;  /* Padding for spacing */
-    color: black;  
-    text-decoration: none;  
-    font-size: 1.2em;  
-    font-weight: bold;  
-    display: block;  /* Makes sure each link takes full space */
-    border-right: 2px solid black;  /* Black separator */
-    background-color: #cbebf1;  /* Light blue background */
+    width: 100%; /* Make each link take full width */
+    text-align: center;
+    padding: 15px 0;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 2px solid black; /* Black separator between links */
+    background-color: white; /* White background */
 }
 
-/* Remove border from last item to avoid double border */
+/* Remove border from the last item */
 nav a:last-child {
-    border-right: none;
+    border-bottom: none;
 }
 
 /* Hover effect */
 nav a:hover {
-    background-color: #2980b9;  /* Blue hover */
-    color: white;  
+    background-color: #cbebf1; /* Light blue hover effect */
+    color: black;
 }
 
 /* Main content styles */
