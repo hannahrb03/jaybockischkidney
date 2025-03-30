@@ -181,17 +181,17 @@ footer p {
     }
 
     footer.footer {
-        font-size: 1em; /* Adjust footer font size for smaller screens */
-        padding: 15px; /* Adjust footer padding for smaller screens */
+        font-size: 1em;
+        padding: 15px;
     }
 
     .about-jay .image-gallery img {
-        max-width: 100%; /* Ensure images take full width on mobile */
+        max-width: 100%;
     }
 
     .image-gallery img, main img {
-        max-width: 100%; /* Makes images responsive on small screens */
-        padding: 5px; /* Reduced padding for smaller devices */
-        margin: 5px; /* Reduced margin for smaller devices */
+        max-width: 100%;
+        padding: 5px;
+        margin: 5px;
     }
 }
