@@ -1,44 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kidney Donation</title>
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&family=Indie+Flower&display=swap" rel="stylesheet">
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
-</head>
-<body>
-    <header>
-        <h1>Kidney Donation</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Jay</a>
-            <a href="donation.html">Kidney Donation</a>
-            <a href="help.html">How to Help</a>
-        </nav>
-    </header>
-<main>
-    <h1>Living Donor Information and Application Link</h1>
-    <main>
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    text-align: center;
+}
 
-    <!-- Living Donor Information -->
-    <section>
-        <p>The UFHealth Living Donor Transplant Program has an online donor application that is paperless and quick to complete. It is secure and HIPAA compliant.</p>
-        <p>Through the Paired Kidney Swap program, anyone is capable of donating a kidney.</p>
-        <p>Feel free to share this with anyone who inquires about how to submit a donor application. </p>
-    <section>
-        <a href="https://redcap.link/kidneydonor" class="donate-btn">Apply as a Donor</a>
-        <a href="https://ufhealth.org/living-kidney-donation" class="learn-btn">Learn More About Living Kidney Donation</a>
-    </section>
-</main>
+/* Header Styling */
+header {
+    background-color: #cbebf1; /* Light blue background */
+    font-family: 'Merriweather'; /* Corrected font for header */
+}
 
-    <footer class="footer">
-        <p>&copy; 2025 Jay's Kidney Journey</p>
-    </footer>
-</body>
-</html>
+header nav {
+    display: flex;
+    flex-direction: column; /* Vertical stack */
+    align-items: center; /* Centers the links */
+    background-color: white;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: none; /* Ensure no bars appear */
+}
+
+nav a {
+    width: 100%; /* Make each link take full width */
+    text-align: center;
+    padding: 15px 0;
+    color: #020f12; /* Navy color for the text */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #cbebf1;
+    color: black;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+/* Styling for paragraphs and list items in white box */
+main p, main li {
+    background-color: white;
+    border: 1px solid #6cdbf0; /* Light blue border */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    max-width: 80%;
+    text-align: center;
+}
+
+/* Heading Styles */
+h1, h2 {
+    color: #2c3e50;
+    padding: 10px;
+    font-family: 'Merriweather';
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+}
+
+/* Footer Styling with Indie Flower Font */
+footer.footer {
+    text-align: center;
+    background-color: #cbebf1;
+    color: #020f12;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 1.2em;
+    font-family: "Indie Flower"; /* Apply Indie Flower font */
+    font-weight: bold;
+    border-top: none; /* Ensure consistency across all pages */
+    box-shadow: none; /* Remove box around footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    background-color: transparent !important; /* Ensure no background */
+    border: none !important; /* Remove any accidental border */
+    box-shadow: none !important; /* Prevent shadow effects */
+    margin: 0;
+    font-style: italic;
+}
+
+/* Button Styles */
+.donate-btn, .learn-btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #34c4ff; /* Blue for the donate button */
+    color: #ffffff; /* White text for contrast */
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.donate-btn:hover, .learn-btn:hover {
+    background-color: #6cdbf0; /* Light blue for hover effect */
+}
+
+/* Specific button styles */
+.donate-btn {
+    background-color: #34c4ff;
+    border: 2px solid #3498db;
+}
+
+.learn-btn {
+    background-color: #5bbd5b;
+    border: 2px solid #4ca64c;
+}
+
+/* Styling for images (Mobile responsive and padded) */
+.image-gallery img, main img {
+    max-width: 80%; /* Adjusted image size for better fit */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Centers images */
+    border-radius: 8px;
+    padding: 10px; /* Adds padding around the images */
+}
+
+/* Centering images specifically for About Jay page */
+.about-jay .image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-jay .image-gallery img {
+    max-width: 60%; /* Reduce image size further for About Jay page */
+}
+
+@media (max-width: 600px) {
+    .image-gallery img, main img {
+        max-width: 100%; /* Makes images responsive on small screens */
+        padding: 5px; /* Reduced padding for smaller devices */
+        margin: 5px; /* Reduced margin for smaller devices */
+    }
+}
+
+/* Bible Verse Styling */
+.bible-verse {
+    background-color: #e0f6fa;
+    border: 2px solid #6cdbf0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 80%;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    main p, main li {
+        max-width: 95%;
+    }
+
+    nav a {
+        font-size: 1.1em;
+    }
+}
