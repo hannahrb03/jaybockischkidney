@@ -88,7 +88,7 @@ footer.footer {
     padding: 20px;
     margin-top: 50px;
     font-size: 1.2em;
-    font-family: "Indie Flower", cursive; /* Apply Indie Flower font */
+    font-family: "Indie Flower"; /* Apply Indie Flower font */
     font-weight: bold;
     border-top: none; /* Ensure consistency across all pages */
 }
@@ -131,8 +131,8 @@ footer p {
 }
 
 /* Styling for images (Mobile responsive and padded) */
-.image-gallery img {
-    max-width: 90%; /* Limits size on smaller screens */
+.image-gallery img, main img {
+    max-width: 80%; /* Adjust image size proportionally */
     height: auto;
     display: block;
     margin: 10px auto; /* Centers images */
@@ -149,7 +149,7 @@ footer p {
 }
 
 @media (max-width: 600px) {
-    .image-gallery img {
+    .image-gallery img, main img {
         max-width: 80%; /* Makes images even smaller on very small screens */
         padding: 5px; /* Reduced padding for smaller devices */
         margin: 5px; /* Reduced margin for smaller devices */
