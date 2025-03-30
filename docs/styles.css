@@ -147,18 +147,6 @@ footer p {
     box-sizing: border-box;
 }
 
-/* Centering images specifically for About Jay page */
-.about-jay .image-gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.about-jay .image-gallery img {
-    max-width: 80%;
-}
-
 /* Bible Verse Styling */
 .bible-verse {
     background-color: #e0f6fa;
@@ -204,13 +192,20 @@ footer p {
     }
 }
 
-/* About Jay Page Specific Styling */
+/* About Jay Page Specific Styling (Consolidated) */
+.about-jay .image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .about-jay .image-gallery img {
-    max-width: 65%;
+    max-width: 65%; /* Adjusted image size */
     border-radius: 10px;
 }
 
-.about-jay .story p { /* Apply box styling to About Jay's story paragraphs */
+.about-jay .story p {
     background-color: white;
     border: 1px solid #6cdbf0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
