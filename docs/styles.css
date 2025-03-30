@@ -91,12 +91,17 @@ footer.footer {
     font-family: "Indie Flower"; /* Apply Indie Flower font */
     font-weight: bold;
     border-top: none; /* Ensure consistency across all pages */
+    background: none; /* Remove background that could cause a white box */
+    box-shadow: none; /* Remove any box shadow that could create the box effect */
 }
 
 footer p {
     margin: 0;
     font-style: italic;
+    background: none; /* Ensure no background on the <p> element */
+    box-shadow: none; /* Remove box shadow if present */
 }
+
 
 /* Button Styles */
 .donate-btn, .learn-btn {
@@ -132,7 +137,7 @@ footer p {
 
 /* Styling for images (Mobile responsive and padded) */
 .image-gallery img, main img {
-    max-width: 80%; /* Adjust image size proportionally */
+    max-width: 100%; /* Makes images responsive to screen size */
     height: auto;
     display: block;
     margin: 10px auto; /* Centers images */
@@ -150,7 +155,7 @@ footer p {
 
 @media (max-width: 600px) {
     .image-gallery img, main img {
-        max-width: 80%; /* Makes images even smaller on very small screens */
+        max-width: 100%; /* Makes images responsive on small screens */
         padding: 5px; /* Reduced padding for smaller devices */
         margin: 5px; /* Reduced margin for smaller devices */
     }
