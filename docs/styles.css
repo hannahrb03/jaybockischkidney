@@ -53,12 +53,13 @@ main {
     margin: auto;
 }
 
-main p, main li {
+/* Paragraphs and List Items in White Boxes */
+main p, main li, .story p { /* Apply to story paragraphs too */
     background-color: white;
     border: 1px solid #6cdbf0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    margin: 15px 0;
+    margin: 15px auto; /* Centers the boxes */
     border-radius: 8px;
     max-width: 80%;
     text-align: center;
@@ -136,12 +137,12 @@ footer p {
 
 /* Image Styling */
 .image-gallery img, main img {
-    max-width: 90%;
+    max-width: 80%; /* Reduced size */
     height: auto;
     display: block;
     margin: 10px auto;
-    border-radius: 8px;
-    padding: 12px;
+    border-radius: 10px; /* Rounded edges */
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -153,7 +154,7 @@ footer p {
 }
 
 .about-jay .image-gallery img {
-    max-width: 80%;
+    max-width: 70%; /* Further reduce for consistency */
 }
 
 /* Bible Verse Styling */
@@ -172,7 +173,7 @@ footer p {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    main p, main li {
+    main p, main li, .story p {
         max-width: 95%;
     }
 
