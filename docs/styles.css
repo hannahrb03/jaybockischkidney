@@ -1,5 +1,6 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 /* General Body Styling */
 body {
@@ -12,6 +13,7 @@ body {
 /* Header Styling */
 header {
     background-color: #cbebf1; /* Light blue background */
+    font-family: 'Merriweather', serif; /* Corrected font for header */
 }
 
 header nav {
@@ -91,17 +93,13 @@ footer.footer {
     font-family: "Indie Flower"; /* Apply Indie Flower font */
     font-weight: bold;
     border-top: none; /* Ensure consistency across all pages */
-    background: none; /* Remove background that could cause a white box */
-    box-shadow: none; /* Remove any box shadow that could create the box effect */
+    box-shadow: none; /* Remove box around footer */
 }
 
 footer p {
     margin: 0;
     font-style: italic;
-    background: none; /* Ensure no background on the <p> element */
-    box-shadow: none; /* Remove box shadow if present */
 }
-
 
 /* Button Styles */
 .donate-btn, .learn-btn {
@@ -151,6 +149,15 @@ footer p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.about-jay .image-gallery img {
+    width: 150px; /* Adjust width for smaller images */
+    height: 150px; /* Ensure height is the same for a circular shape */
+    border-radius: 50%; /* Make the images circular */
+    padding: 10px; /* Adds padding around the images */
+    margin: 10px; /* Centers the images with a bit of spacing */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
 }
 
 @media (max-width: 600px) {
