@@ -201,7 +201,7 @@ footer p {
 }
 
 .about-jay .image-gallery img {
-    max-width: 65%; /* Adjusted image size */
+    max-width: 50%; /* Adjusted image size */
     border-radius: 10px;
 }
 
