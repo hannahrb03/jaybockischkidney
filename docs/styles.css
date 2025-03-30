@@ -191,7 +191,6 @@ footer p {
         padding: 10px;
     }
 }
-
 /* About Jay Page Specific Styling (Consolidated) */
 .about-jay .image-gallery {
     display: flex;
@@ -201,8 +200,11 @@ footer p {
 }
 
 .about-jay .image-gallery img {
-    max-width: 50%; /* Adjusted image size */
+    max-width: 50%;
     border-radius: 10px;
+    padding: 20px; /* Add padding around the images */
+    box-sizing: border-box; /* Include padding in the image's total width */
+    margin: 20px 0; /* Add margin to space out the images */
 }
 
 .about-jay .story p {
@@ -218,6 +220,7 @@ footer p {
 
 @media (max-width: 600px) {
     .about-jay .image-gallery img {
-        max-width: 50%;
+        max-width: 90%; /* Adjust for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 }
