@@ -13,7 +13,7 @@ body {
 /* Header Styling */
 header {
     background-color: #cbebf1; /* Light blue background */
-    font-family: 'Merriweather', serif; /* Corrected font for header */
+    font-family: 'Merriweather'; /* Corrected font for header */
 }
 
 header nav {
