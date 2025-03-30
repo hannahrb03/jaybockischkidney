@@ -8,6 +8,8 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header Styling */
@@ -23,7 +25,6 @@ header nav {
     background-color: white;
     width: 100%;
     padding: 10px 0;
-    border-bottom: none; /* Ensure no bars appear */
 }
 
 nav a {
@@ -52,10 +53,10 @@ main {
     margin: auto;
 }
 
-/* Styling for paragraphs and list items in white box */
+/* Styling for paragraphs and list items */
 main p, main li {
     background-color: white;
-    border: 1px solid #6cdbf0; /* Light blue border */
+    border: 1px solid #6cdbf0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     margin: 15px 0;
@@ -82,37 +83,36 @@ h2 {
     padding-bottom: 10px;
 }
 
-/* Footer Styling with Indie Flower Font */
+/* Footer Styling */
 footer.footer {
     text-align: center;
     background-color: #cbebf1;
     color: #020f12;
     padding: 20px;
-    margin-top: 50px;
     font-size: 1.2em;
-    font-family: "Indie Flower"; /* Apply Indie Flower font */
+    font-family: "Indie Flower";
     font-weight: bold;
-    border-top: none; /* Ensure consistency across all pages */
-    box-shadow: none; /* Remove box around footer */
+    border-top: none;
+    box-shadow: none;
     position: relative;
-    bottom: 0;
     width: 100%;
 }
 
 footer p {
-    background-color:none !important; /* Ensure no background */
-    border: none !important; /* Remove any accidental border */
-    box-shadow: none !important; /* Prevent shadow effects */
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
     margin: 0;
     font-style: italic;
+    padding: 0;
 }
 
 /* Button Styles */
 .donate-btn, .learn-btn {
     display: inline-block;
     text-align: center;
-    background-color: #34c4ff; /* Blue for the donate button */
-    color: #ffffff; /* White text for contrast */
+    background-color: #34c4ff;
+    color: #ffffff;
     padding: 15px 30px;
     font-size: 1.2em;
     font-weight: bold;
@@ -123,50 +123,28 @@ footer p {
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect for buttons */
 .donate-btn:hover, .learn-btn:hover {
-    background-color: #6cdbf0; /* Light blue for hover effect */
+    background-color: #6cdbf0;
 }
 
-/* Specific button styles */
-.donate-btn {
-    background-color: #34c4ff;
-    border: 2px solid #3498db;
-}
-
-.learn-btn {
-    background-color: #5bbd5b;
-    border: 2px solid #4ca64c;
-}
-
-/* Styling for images (Mobile responsive and padded) */
+/* Image Styling for Responsiveness */
 .image-gallery img, main img {
-    max-width: 70%; /* Adjusted image size for better fit */
+    max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px auto; /* Centers images */
+    margin: 10px auto;
     border-radius: 8px;
-    padding: 12px; /* Adds padding around the images */
+    padding: 8px;
 }
 
-/* Centering images specifically for About Jay page */
 .about-jay .image-gallery {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .about-jay .image-gallery img {
-    max-width: 60%; /* Reduce image size further for About Jay page */
-}
-
-@media (max-width: 600px) {
-    .image-gallery img, main img {
-        max-width: 100%; /* Makes images responsive on small screens */
-        padding: 5px; /* Reduced padding for smaller devices */
-        margin: 5px; /* Reduced margin for smaller devices */
-    }
+    max-width: 90%;
 }
 
 /* Bible Verse Styling */
@@ -191,5 +169,13 @@ footer p {
 
     nav a {
         font-size: 1.1em;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-gallery img, main img {
+        max-width: 100%;
+        padding: 5px;
+        margin: 5px;
     }
 }
