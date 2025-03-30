@@ -1,33 +1,25 @@
-/* Global Styles */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* General Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    text-align: center; /* Centers all text globally */
+    text-align: center;
 }
 
-/* Ensure Google Font is Loaded */
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-
-/* Header Styles */
+/* Header Styling */
 header {
     background-color: #cbebf1; /* Light blue background */
-    padding: 20px;
 }
 
-header h1 {
-    color: #2c3e50;
-    font-size: 2.5em;
-    margin: 0;
-}
-
-/* Navigation Styles */
-nav {
+header nav {
     display: flex;
     flex-direction: column; /* Vertical stack */
     align-items: center; /* Centers the links */
-    background-color: white; /* White background */
-    width: 100%; /* Full width */
+    background-color: white;
+    width: 100%;
     padding: 10px 0;
 }
 
@@ -35,68 +27,46 @@ nav a {
     width: 100%; /* Make each link take full width */
     text-align: center;
     padding: 15px 0;
-    color: navy; /* Change text color to navy */
+    color: navy; /* Navy color for the text */
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
-    border-bottom: 2px navy; /* Change border line color to navy */
-    background-color: white; /* White background */
-}
-
-nav a:last-child {
-    border-bottom: none; /* Remove border from the last item */
+    border-bottom: 2px solid navy; /* Navy color line */
 }
 
 nav a:hover {
-    background-color: #cbebf1; /* Light blue hover effect */
-    color: navy; /* Keep text color navy on hover */
-    border-bottom: 2px solid navy; /* Keep the border line navy on hover */
+    background-color: #cbebf1;
+    color: black;
 }
 
-/* Main content styles */
+/* Main Content Styling */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     justify-content: center;
-    text-align: center;
     max-width: 90%;
     margin: auto;
 }
 
+/* Styling for paragraphs and list items in white box */
 main p, main li {
     background-color: white;
     border: 1px solid #6cdbf0; /* Light blue border */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     margin: 15px 0;
-    margin: 15px auto;
     border-radius: 8px;
     max-width: 80%;
-    text-align: center; /* Ensures text inside boxes is centered */
-}
-
-/* Bible Verse Section - Keep Original Styling */
-.bible-verse {
-    background-color: #f0f8ff;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 20px 0;
     text-align: center;
-    font-style: italic;
-}
-
-.bible-verse p {
-    color: #4a5568;
-    font-size: 1.05em;
 }
 
 /* Heading Styles */
 h1, h2 {
     color: #2c3e50;
     padding: 10px;
-    font-family: 'Roboto', sans-serif; /* Use Roboto for headings */
+    font-family: 'Merriweather', serif;
     margin-bottom: 20px;
 }
 
@@ -110,21 +80,51 @@ h2 {
     padding-bottom: 10px;
 }
 
-/* Footer Styling */
+/* Footer Styling with Indie Flower Font */
 footer.footer {
     text-align: center;
     background-color: #cbebf1;
-    color: navy; /* Change footer text color to navy */
+    color: #020f12;
     padding: 20px;
     margin-top: 50px;
     font-size: 1.2em;
-    font-family: "Indie Flower", cursive; /* Using Indie Flower font for the footer only */
+    font-family: "Indie Flower", cursive; /* Apply Indie Flower font */
     font-weight: bold;
 }
 
 footer p {
     margin: 0;
     font-style: italic;
+}
+
+/* Button Styles */
+.donate-btn, .learn-btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #cbebf1;
+    color: #020f12;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.donate-btn:hover, .learn-btn:hover {
+    background-color: #6cdbf0;
+}
+
+.donate-btn {
+    background-color: #34c4ff;
+    border: 2px solid #3498db;
+}
+
+.learn-btn {
+    background-color: #5bbd5b;
+    border: 2px solid #4ca64c;
 }
 
 /* Responsive Adjustments */
@@ -138,17 +138,3 @@ footer p {
     }
 }
 
-/* Image Styles */
-.gallery-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 15px;
-}
-
-/* Ensure Images Are Centered */
-.container img {
-    max-width: 100%;
-    height: auto;
-}
