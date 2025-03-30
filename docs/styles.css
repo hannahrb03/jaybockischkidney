@@ -39,7 +39,7 @@ nav a {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
-    border-bottom: 2px solid navy; /* Change border line color to navy */
+    border-bottom: 2px navy; /* Change border line color to navy */
     background-color: white; /* White background */
 }
 
