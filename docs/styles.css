@@ -96,7 +96,7 @@ main p, main li {
 h1, h2 {
     color: #2c3e50;
     padding: 10px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif; /* Use Roboto for headings */
     margin-bottom: 20px;
 }
 
@@ -118,7 +118,7 @@ footer.footer {
     padding: 20px;
     margin-top: 50px;
     font-size: 1.2em;
-    font-family: "Indie Flower", cursive; /* Using Indie Flower font for the footer */
+    font-family: "Indie Flower", cursive; /* Using Indie Flower font for the footer only */
     font-weight: bold;
 }
 
