@@ -183,13 +183,13 @@ footer p {
         font-size: 1.1em;
     }
     footer.footer {
-        font-size: 1em; /* Adjust footer font size for smaller screens */
-        padding: 15px; /* Adjust footer padding for smaller screens */
+        font-size: 1em;
+        padding: 15px;
     }
 }
 
 @media (max-width: 600px) {
-    .image-gallery img, main img, .about-jay .image-gallery img {
+    .image-gallery img, main img {
         max-width: 100%;
         padding: 5px;
         margin: 5px;
@@ -201,5 +201,28 @@ footer p {
     footer.footer {
         font-size: 0.9em;
         padding: 10px;
+    }
+}
+
+/* About Jay Page Specific Styling */
+.about-jay .image-gallery img {
+    max-width: 70%; /* Further reduce size for About Jay images */
+    border-radius: 10px; /* Add rounded edges */
+}
+
+.about-jay .story p { /* Style paragraphs in About Jay's story */
+    background-color: white;
+    border: 1px solid #6cdbf0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 8px;
+    max-width: 80%;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .about-jay .image-gallery img {
+        max-width: 100%; /* About Jay images full width on small screens */
     }
 }
