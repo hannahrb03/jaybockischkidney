@@ -42,7 +42,7 @@ nav a:hover {
     color: black;
 }
 
-/* Main Content Styling (General) */
+/* Main Content Styling */
 main {
     display: flex;
     flex-direction: column;
@@ -53,7 +53,7 @@ main {
     margin: auto;
 }
 
-/* Paragraphs and List Items in White Boxes (General) */
+/* Styling for paragraphs and list items in white box */
 main p, main li {
     background-color: white;
     border: 1px solid #6cdbf0;
@@ -65,6 +65,7 @@ main p, main li {
     text-align: center;
 }
 
+/* Heading Styles */
 h1, h2 {
     color: #2c3e50;
     padding: 10px;
@@ -82,14 +83,14 @@ h2 {
     padding-bottom: 10px;
 }
 
-/* Footer Styling */
+/* Footer Styling with Indie Flower Font */
 footer.footer {
     text-align: center;
     background-color: #cbebf1;
     color: #020f12;
-    padding: 10px;
+    padding: 20px;
     margin-top: 50px;
-    font-size: 1 em;
+    font-size: 1.2em;
     font-family: "Indie Flower";
     font-weight: bold;
     border-top: none;
@@ -135,7 +136,7 @@ footer p {
     border: 2px solid #4ca64c;
 }
 
-/* Image Styling (General) */
+/* Styling for images (Mobile responsive and padded) */
 .image-gallery img, main img {
     max-width: 90%;
     height: auto;
@@ -146,29 +147,16 @@ footer p {
     box-sizing: border-box;
 }
 
-/* About Jay Page Specific Styling */
-.about-jay .image-gallery img {
-    max-width: 70%;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.about-jay .story p {
-    background-color: white;
-    border: 1px solid #6cdbf0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    margin: 15px auto;
-    border-radius: 8px;
-    max-width: 80%;
-    text-align: center;
-}
-
+/* Centering images specifically for About Jay page */
 .about-jay .image-gallery {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.about-jay .image-gallery img {
+    max-width: 80%;
 }
 
 /* Bible Verse Styling */
@@ -187,22 +175,31 @@ footer p {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    main p, main li, .about-jay .story p {
+    main p, main li {
         max-width: 95%;
     }
 
     nav a {
         font-size: 1.1em;
     }
-
     footer.footer {
-        font-size: 1em;
-        padding: 15px;
+        font-size: 1em; /* Adjust footer font size for smaller screens */
+        padding: 15px; /* Adjust footer padding for smaller screens */
     }
+}
 
+@media (max-width: 600px) {
     .image-gallery img, main img, .about-jay .image-gallery img {
         max-width: 100%;
         padding: 5px;
         margin: 5px;
+    }
+    nav a {
+        font-size: 1em;
+        padding: 10px 0;
+    }
+    footer.footer {
+        font-size: 0.9em;
+        padding: 10px;
     }
 }
