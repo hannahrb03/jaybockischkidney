@@ -68,7 +68,7 @@ main p, main li {
 h1, h2 {
     color: #2c3e50;
     padding: 10px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Merriweather';
     margin-bottom: 20px;
 }
 
@@ -94,6 +94,9 @@ footer.footer {
     font-weight: bold;
     border-top: none; /* Ensure consistency across all pages */
     box-shadow: none; /* Remove box around footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
@@ -135,12 +138,12 @@ footer p {
 
 /* Styling for images (Mobile responsive and padded) */
 .image-gallery img, main img {
-    max-width: 100%; /* Makes images responsive to screen size */
+    max-width: 80%; /* Adjusted image size for better fit */
     height: auto;
     display: block;
     margin: 10px auto; /* Centers images */
-    border-radius: 6px;
-    padding: 8px; /* Adds padding around the images */
+    border-radius: 8px;
+    padding: 10px; /* Adds padding around the images */
 }
 
 /* Centering images specifically for About Jay page */
@@ -152,12 +155,7 @@ footer p {
 }
 
 .about-jay .image-gallery img {
-    width: 150px; /* Adjust width for smaller images */
-    height: 150px; /* Ensure height is the same for a circular shape */
-    border-radius: 50%; /* Make the images circular */
-    padding: 10px; /* Adds padding around the images */
-    margin: 10px; /* Centers the images with a bit of spacing */
-    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    max-width: 60%; /* Reduce image size further for About Jay page */
 }
 
 @media (max-width: 600px) {
