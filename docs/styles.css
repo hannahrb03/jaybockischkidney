@@ -10,8 +10,11 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    text-align: center; /* Centers all text globally */
+    text-align: center; /* Centers all inline and block-level text */
 }
+
+/* Ensure Google Font is Loaded */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 /* Header Styles */
 header {
@@ -24,22 +27,22 @@ header {
 nav {
     display: flex;
     flex-direction: column; /* Vertical stack */
-    align-items: center; /* Centers the links */
-    background-color: white; /* White background */
-    width: 100%; /* Full width */
+    align-items: center;
+    background-color: white;
+    width: 100%;
     padding: 10px 0;
 }
 
 nav a {
-    width: 100%; /* Make each link take full width */
+    width: 100%;
     text-align: center;
     padding: 15px 0;
     color: black;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
-    border-bottom: 2px solid black; /* Black separator between links */
-    background-color: white; /* White background */
+    border-bottom: 2px solid black;
+    background-color: white;
 }
 
 /* Remove border from the last item */
@@ -49,106 +52,68 @@ nav a:last-child {
 
 /* Hover effect */
 nav a:hover {
-    background-color: #cbebf1; /* Light blue hover effect */
+    background-color: #cbebf1;
     color: black;
 }
 
-/* Main content styles */
+/* Centering Main Content */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
     text-align: center;
+    padding: 20px;
     max-width: 90%;
     margin: auto;
 }
 
-/* Apply White Box Styling to All Paragraphs */
-main p {
+/* Ensure List Items Are Centered */
+main ul {
+    list-style-position: inside;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensure list items are centered */
+    width: 100%;
+}
+
+/* White Box Styling for Text Sections */
+main p, main li {
     background-color: white;
-    border: 1px solid #6cdbf0; /* Light blue border */
+    border: 1px solid #6cdbf0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    margin: 15px 0;
+    margin: 15px auto;
     border-radius: 8px;
     max-width: 80%;
+    text-align: center; /* Ensures text inside boxes is centered */
 }
 
-/* Bible Verse Section - Keep Original Styling */
-.bible-verse {
-    background-color: #f0f8ff;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 20px 0;
-    text-align: center;
-    font-style: italic;
-}
-
-.bible-verse p {
-    color: #4a5568;
-    font-size: 1.05em;
-}
-
-/* Heading Styles */
-h1, h2 {
-    color: #2c3e50;
-    padding: 10px;
-    font-family: 'Merriweather', serif;
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 2.2em;
-}
-
-h2 {
-    font-size: 1.8em;
-    border-bottom: 2px solid #ecf0f1;
-    padding-bottom: 10px;
-}
-
-/* Footer Styling */
+/* Footer Styling with Indie Flower Font */
 footer.footer {
     text-align: center;
     background-color: #cbebf1;
-    color: #020f12;
+    color: white;
     padding: 20px;
     margin-top: 50px;
     font-size: 1.2em;
-    font-family: "Indie Flower", cursive;
+    font-family: "Indie Flower", cursive; /* Now using Indie Flower */
     font-weight: bold;
-}
-
-footer .fas {
-    color: red;
-}
-
-footer p {
-    margin: 0;
-    font-style: italic;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    main p {
+    main p, main li {
         max-width: 95%;
     }
-
     nav a {
         font-size: 1.1em;
     }
 }
 
-/* Image Styles */
-.gallery-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 15px;
-}
-
+/* Ensure Images Are Centered */
 .container img {
     max-width: 100%;
     height: auto;
