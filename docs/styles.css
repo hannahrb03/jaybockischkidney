@@ -61,7 +61,7 @@ main p, main li {
 
 /* Bible Verse Section Styling (light blue boxes) */
 .bible-verse {
-    background-color: #6cdbf0; /* Light blue background */
+    background-color: #e0f6fa; /* Light blue background for Bible verses */
     border-radius: 8px;
     padding: 20px;
     margin: 20px 0;
@@ -72,10 +72,11 @@ main p, main li {
 
 /* Image Styling in About Jay */
 .about-jay img {
-    width: 80%; /* Adjust width of the images */
+    width: 70%; /* Ensure images are smaller */
     height: auto;
-    border-radius: 8px; /* Optional: add rounded corners to images */
-    margin: 10px 0;
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px; /* Padding around the image */
+    margin: 15px 0; /* Margin for spacing between images */
 }
 
 /* Heading Styles */
