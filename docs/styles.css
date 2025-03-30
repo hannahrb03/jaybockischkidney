@@ -21,6 +21,7 @@ header nav {
     background-color: white;
     width: 100%;
     padding: 10px 0;
+    border-bottom: none; /* Ensure no bars appear */
 }
 
 nav a {
@@ -31,7 +32,6 @@ nav a {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
-    border-bottom: 2px solid #020f12; /* Navy color line */
 }
 
 nav a:hover {
@@ -90,6 +90,7 @@ footer.footer {
     font-size: 1.2em;
     font-family: "Indie Flower", cursive; /* Apply Indie Flower font */
     font-weight: bold;
+    border-top: none; /* Ensure consistency across all pages */
 }
 
 footer p {
@@ -139,6 +140,14 @@ footer p {
     padding: 10px; /* Adds padding around the images */
 }
 
+/* Centering images specifically for About Jay page */
+.about-jay .image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 @media (max-width: 600px) {
     .image-gallery img {
         max-width: 80%; /* Makes images even smaller on very small screens */
@@ -159,22 +168,6 @@ footer p {
     text-align: center;
     font-style: italic;
     font-size: 1.2em;
-}
-
-/* Footer Styling with Indie Flower Font */
-footer.footer {
-    font-family: 'Indie Flower';
-    background-color: #cbebf1;
-    color: #020f12;
-    padding: 20px;
-    margin-top: 50px;
-    font-size: 1.2em;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-    font-style: italic;
 }
 
 /* Responsive Adjustments */
