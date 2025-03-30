@@ -139,8 +139,8 @@ footer p {
     height: auto;
     display: block;
     margin: 10px auto; /* Centers images */
-    border-radius: 8px;
-    padding: 10px; /* Adds padding around the images */
+    border-radius: 6px;
+    padding: 8px; /* Adds padding around the images */
 }
 
 /* Centering images specifically for About Jay page */
