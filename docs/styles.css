@@ -27,11 +27,11 @@ nav a {
     width: 100%; /* Make each link take full width */
     text-align: center;
     padding: 15px 0;
-    color: navy; /* Navy color for the text */
+    color: #020f12; /* Navy color for the text */
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
-    border-bottom: 2px solid navy; /* Navy color line */
+    border-bottom: 2px #020f12; /* Navy color line */
 }
 
 nav a:hover {
