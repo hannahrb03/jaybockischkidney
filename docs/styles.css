@@ -1,11 +1,12 @@
-/* General Styles */
+/* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    text-align: center;
+    text-align: center; /* Centers all text globally */
 }
 
+/* Ensure Google Font is Loaded */
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 /* Header Styles */
@@ -15,8 +16,9 @@ header {
 }
 
 header h1 {
-    font-family: 'Indie Flower', cursive;
     color: #2c3e50;
+    font-size: 2.5em;
+    margin: 0;
 }
 
 /* Navigation Styles */
@@ -33,11 +35,11 @@ nav a {
     width: 100%; /* Make each link take full width */
     text-align: center;
     padding: 15px 0;
-    color: black;
+    color: navy; /* Change text color to navy */
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid navy; /* Change border line color to navy */
     background-color: white; /* White background */
 }
 
@@ -47,10 +49,11 @@ nav a:last-child {
 
 nav a:hover {
     background-color: #cbebf1; /* Light blue hover effect */
-    color: black;
+    color: navy; /* Keep text color navy on hover */
+    border-bottom: 2px solid navy; /* Keep the border line navy on hover */
 }
 
-/* Main Content Styles */
+/* Main content styles */
 main {
     display: flex;
     flex-direction: column;
@@ -67,27 +70,14 @@ main p, main li {
     border: 1px solid #6cdbf0; /* Light blue border */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
+    margin: 15px 0;
     margin: 15px auto;
     border-radius: 8px;
     max-width: 80%;
     text-align: center; /* Ensures text inside boxes is centered */
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-ul li {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
+/* Bible Verse Section - Keep Original Styling */
 .bible-verse {
     background-color: #f0f8ff;
     border-radius: 10px;
@@ -102,6 +92,7 @@ ul li {
     font-size: 1.05em;
 }
 
+/* Heading Styles */
 h1, h2 {
     color: #2c3e50;
     padding: 10px;
@@ -122,12 +113,12 @@ h2 {
 /* Footer Styling */
 footer.footer {
     text-align: center;
-    background-color: #cbebf1; /* Light blue background */
-    color: #020f12;
+    background-color: #cbebf1;
+    color: navy; /* Change footer text color to navy */
     padding: 20px;
     margin-top: 50px;
     font-size: 1.2em;
-    font-family: "Indie Flower", cursive;
+    font-family: "Indie Flower", cursive; /* Using Indie Flower font for the footer */
     font-weight: bold;
 }
 
@@ -139,7 +130,7 @@ footer p {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     main p, main li {
-        max-width: 95%; /* Adjust for mobile */
+        max-width: 95%;
     }
 
     nav a {
@@ -156,25 +147,8 @@ footer p {
     margin-bottom: 15px;
 }
 
+/* Ensure Images Are Centered */
 .container img {
     max-width: 100%;
     height: auto;
-}
-
-/* Specific Button Styles */
-.link-button,
-.info-link {
-    display: inline-block;
-    background-color: #0077b6;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 1.1em;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.link-button:hover,
-.info-link:hover {
-    background-color: #005f73;
 }
