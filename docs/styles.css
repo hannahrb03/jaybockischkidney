@@ -210,7 +210,7 @@ footer p {
     border-radius: 10px;
 }
 
-.about-jay .story p {
+.about-jay .story p { /* Apply box styling to About Jay's story paragraphs */
     background-color: white;
     border: 1px solid #6cdbf0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
